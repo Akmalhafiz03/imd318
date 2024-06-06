@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Family</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background-color: #F1948A;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        header {
+            background: red;
+            color: black;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .family-member {
+            background: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border: #ccc 1px solid;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .family-member img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: block;
+            margin: 0 auto;
+        }
+        .family-member h2 {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .family-member p {
+            text-align: center;
+        }
+        .slideshow-container {
+            position: relative;
+            margin-top: 20px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .mySlides {
+            display: none;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+figure {
+            text-align: center;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        figcaption {
+            margin-top: 10px;
+            font-style: italic;
+            color: white;
+        }
+
+       .footer {
+          padding: 15px;
+          text-align: center;
+          color: black;
+          font-size: 14px;
+          margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1><marquee>
+My Family</marquee>
+</h1>
+    </div>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+          <a href="education.html">Education</a>
+          <a href="hobby.html">Hobby</a>
+          <a href="friends.html">Friends</a>
+          <a href="song.html">Favourite Songs</a>
+          <a href="spm.html">SPM Result</a>
+
+    </div>
+</nav>
+
+<div class="container">
+    <div class="family-member slideshow-container">
+        <div class="mySlides fade">
+            <img src="image/ayah.jpg" alt="Dad">
+            <h2>Father</h2>
+            <p>Name: Ku Azuwan Ku Denan</p>
+            <p>Job: Technical Assistant</p>
+            <p>Date of Birth: 20th November 1977 (46 years-old)</p>
+            <p>From: Mata Ayer, Perlis</p>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="image/mama.jpg" alt="Mom">
+            <h2>Mother</h2>
+            <p>Name: Rusmaniyah Musa</p>
+            <p>Job: Teacher</p>
+            <p>Date of Birth: 20th May 1977 (47 years-old)</p>
+            <p>From: Jelempok, Perlis</p>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="image/adikamir.jpg" alt="brother">
+            <h2>Young Brother</h2>
+            <p>Name: Ku Amir Faisal Ku Azuwan</p>
+            <p>School: SMK Penanti (Form 2)</p>
+            <p>Date of Birth: 3rd July 2010 (14 years-old)</p>
+            <p>Place of Birth: Penang General Hospital, George Town </p>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+</div>
+
+<figure>
+        <img src="image/hariraya.jpg" alt="Description of image" width="600">
+        <figcaption> Photo of me and my family during Eid Mubarak </figcaption>
+    </figure>
+
+<br>
+
+<figure>
+        <img src="image/meandadik.jpg" alt="Description of image" width="600">
+        <figcaption> Photo of me and my young brother with our youngest cousin </figcaption>
+    </figure>
+
+<br>
+
+<figure>
+        <img src="image/cikmah.jpg" alt="Description of image" width="600">
+        <figcaption> Photo of my family and my aunt's family</figcaption>
+    </figure>
+
+
+
+
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+    }
+</script>
+
+<footer class="footer">
+  <p>&copy; 2024. All rights reserved.<br>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Friends</title>
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background-color: pink;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: red;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #ddd;
+            color: red; /* Change color on hover */
+        }
+        .friend {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .friend img {
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+        .friend .details {
+            flex-grow: 1;
+        }
+        .friend .details h2 {
+            margin: 0 0 10px;
+            font-size: 24px;
+        }
+        .friend .details p {
+            margin: 0;
+            color: #555;
+        }
+
+        .footer {
+          padding: 15px;
+          text-align: center;
+          color: black;
+          font-size: 14px;
+          margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Friends</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li> <a href="family.html">Family</a></li>
+        <li><a href="spm.html">SPM Result</a></li>
+    </ul>
+</nav>
+    
+<div class="friend" id="luqman">
+    <img src="image/man.jpg" alt="Luqman Hakim bin Mohd Azmi">
+    <div class="details">
+        <h2>Name: Luqman Hakim bin Mohd Azmi</h2>
+        <p>Date of Birth: 7th March 2000</p>
+        <p>From: Sungai Buloh, Selangor</p>
+    </div>
+</div>
+
+<div class="friend" id="dinie">
+    <img src="image/wiem.jpg" alt="Dinie Qawiem bin Nor Azhar">
+    <div class="details">
+        <h2>Name: Dinie Qawiem bin Nor Azhar</h2>
+        <p>Date of Birth: 15th December 2001</p>
+        <p>From: Ipoh, Perak</p>
+    </div>
+</div>
+
+<div class="friend" id="farduddin">
+    <img src="image/farid.jpg" alt="Muhamad Farduddin bin Rozaki">
+    <div class="details">
+        <h2>Name: Muhamad Fariduddin bin Rozaki</h2>
+        <p>Date of Birth: 25th March 2006</p>
+        <p>From: Kebakat, Wakaf Baru, Kelantan</p>
+    </div>
+</div>
+
+<div class="friend" id="faris">
+    <img src="image/kumi.jpg" alt="M. Faris Haikal b. Khairil">
+    <div class="details">
+        <h2>Name: M. Faris Haikal b. Khairil</h2>
+        <p>Date of Birth: 23rd September 1999</p>
+        <p>From: Kuantan, Pahang</p>
+    </div>
+</div>
+
+<div class="friend" id="syazwan">
+    <img src="image/zuwe.jpg" alt="Mohammad Syazwan bin Mohd Syabry">
+    <div class="details">
+        <h2>Name: Mohammad Syazwan bin Mohd Syabry</h2>
+        <p>Date of Birth: 18th May 2001</p>
+        <p>From: Kota Bharu, Kelantan</p>
+    </div>
+</div>
+
+<footer class="footer">
+  <p>&copy; 2024. All rights reserved.<br>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Songs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: red;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header img {
+            width: auto; /* Adjust width as needed */
+            height: auto; /* Adjust height automatically */
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: red;
+            color: #fff;
+            padding-top: 20px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar li {
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .sidebar li:hover {
+            background-color: white;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        .song {
+            margin-bottom: 0px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 3px;
+        }
+        .song h2 {
+            margin-top: 0;
+        }
+         .footer {
+           padding: 15px;
+           text-align: center;
+           color: #333;
+           font-size: 14px;
+           margin-top: 20px; 
+
+        }
+        nav {
+            background-color: pink;
+            color: black;
+            padding: 10px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+ <h1><marquee>
+            MY FAVOURITE MUSIC OF ALL TIME
+        </marquee></h1></header>
+
+<div class="container">
+    <div class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="hobby.html">Hobby</a></li>
+                <li><a href="friends.html">Friends</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="spm.html">SPM Result</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="song">
+            <h2>24Karats Stay Gold</h2>
+            <p>Artist: 三代目J Soul Brothers and EXILE</p>
+<audio controls>
+                <source src="audio/staygold.mp3" type="audio/mp3" type="audio/mp3">
+</a></audio>
+        </div>
+
+        <div class="song">
+            <h2>Fade</h2>
+            <p>Artist: Alan Walker</p>
+<audio controls>
+                <source src="audio/fade.mp3" type="audio/mp3" type="audio/mp3">
+</a> </audio>
+        </div>
+
+
+        <div class="song">
+            <h2>New Divide</h2>
+            <p>Artist: Linkin Park</p>
+        <audio controls>
+                <source src="audio/newdivide.mp3" type="audio/mp3" type="audio/mp3">
+</a></audio>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ABOUT ME</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #666;
+            padding: 15px;
+            text-align: center;
+            font-size: 25px;
+            color: white;
+        }
+
+        nav {
+            float: left;
+            width: 200px;
+            background-color: #f1f1f1;
+            padding-top: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            padding: 8px;
+            text-align: center;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            display: block;
+            padding: 8px 16px;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            color: white;
+        }
+
+        article {
+            margin-left: 220px;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 14px;
+            color: black;
+        }
+
+        .profile-img {
+            display: block;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .bio {
+            text-align: center;
+        }
+
+        .container {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Centers the content inside the container */
+            margin-top: 20px;
+        }
+
+        .video-container {
+            margin-right: 20px;
+        }
+
+        .description {
+            font-size: 16px;
+            color: #333;
+        }
+
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+                margin: 0;
+            }
+
+            nav {
+                float: none;
+            }
+
+            article {
+                margin-left: 0;
+            }
+
+            .container {
+                flex-direction: column; /* Stack video and description vertically on small screens */
+            }
+
+            .video-container {
+                margin-right: 0;
+                margin-bottom: 20px; /* Add margin between video and description on small screens */
+            }
+
+
+            figure {
+            text-align: center;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        figcaption {
+            margin-top: 10px;
+            font-style: italic;
+            color: white;
+        
+
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>ABOUT ME</h2>
+</header>
+
+<section>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="hobby.html">Hobby</a></li>
+            <li><a href="friends.html">Friends</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="song.html">Favourite Songs</a></li>
+            <li><a href="spm.html">SPM Result</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <div class="bio">
+            <img src="image/me.jpg" alt="KU AKMAL HAFIZ BIN KU AZUWAN" class="profile-img" width="250" height="250">
+            <div class="section">
+                <h2>Personal Information</h2>
+                <p><strong>Name:</strong> Ku Akmal Hafiz bin Ku Azuwan</p>
+                <p><strong>Date of Birth:</strong> 16th October 2003</p>
+                <p><strong>Place of Birth:</strong> Penang General Hospital, George Town</p>
+                <p><strong>States:</strong> Penang </p>
+                <p><strong>Address:</strong> 29, lorong seri Mengkuang 6, Taman Seri Mengkuang, 14400 Bukit Mertajam, Pulau Pinang</p>
+                <p><strong>Phone:</strong> 011-5830 1690</p>
+                <p><strong>Email:</strong> hfzakml3@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="video-container">
+                <video controls width="300">
+                    <source src="video/pbakl24.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="description">
+                Watch my vlog video of my journey to International Book Fair Kuala Lumpur 2024
+            </div>
+        </div>
+
+
+<h1>PHOTOS OF ME</h1>
+
+<figure>
+        <img src="image/akmal.jpg" alt="Description of image" width="600">
+        <figcaption> Photo of me during Ultraman Decker Final Tour: Journey to Blazar event.(2023)</figcaption>
+    </figure>
+
+
+<br>
+
+<figure>
+        <img src="image/ku.jpg" alt="Description of image" width="600">
+        <figcaption> Photo of me when I was 9 years old.(2012) </figcaption>
+    </figure>
+
+<br>
+
+<figure>
+        <img src="image/hafiz.jpg" alt="Description of image" width="600">
+        <figcaption> Photo of me when I was 16 years old.(2019)</figcaption>
+    </figure>
+
+    </article>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2024. All rights reserved.<br>
+</footer>
+
+</body>
+</html>
